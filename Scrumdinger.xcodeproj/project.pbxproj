@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29ADCF832DA68BC9003A3B62 /* TranscriptionKit in Frameworks */ = {isa = PBXBuildFile; productRef = 29ADCF822DA68BC9003A3B62 /* TranscriptionKit */; };
 		29DE450A2D9AB6DC00298AF9 /* ThemeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 29DE45092D9AB6DC00298AF9 /* ThemeKit */; };
 		29DE45672D9C1A5C00298AF9 /* TimerKit in Frameworks */ = {isa = PBXBuildFile; productRef = 29DE45662D9C1A5C00298AF9 /* TimerKit */; };
 /* End PBXBuildFile section */
@@ -30,6 +31,7 @@
 			files = (
 				29DE450A2D9AB6DC00298AF9 /* ThemeKit in Frameworks */,
 				29DE45672D9C1A5C00298AF9 /* TimerKit in Frameworks */,
+				29ADCF832DA68BC9003A3B62 /* TranscriptionKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +76,7 @@
 			packageProductDependencies = (
 				29DE45092D9AB6DC00298AF9 /* ThemeKit */,
 				29DE45662D9C1A5C00298AF9 /* TimerKit */,
+				29ADCF822DA68BC9003A3B62 /* TranscriptionKit */,
 			);
 			productName = Scrumdinger;
 			productReference = 29DE44EC2D9AB02900298AF9 /* Scrumdinger.app */;
@@ -106,6 +109,7 @@
 			packageReferences = (
 				29DE45082D9AB6DC00298AF9 /* XCLocalSwiftPackageReference "ThemeKit" */,
 				29DE45652D9C1A5C00298AF9 /* XCLocalSwiftPackageReference "../../../Downloads/ManagingStateAndLifeCycle/StartingProject/TutorialResources/TimerKit" */,
+				29ADCF812DA68BC9003A3B62 /* XCLocalSwiftPackageReference "../../../Downloads/TranscribingSpeechToText/StartingProject/TutorialResources/TranscriptionKit" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 29DE44ED2D9AB02900298AF9 /* Products */;
@@ -268,6 +272,8 @@
 				DEVELOPMENT_TEAM = V5748RS8YH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +303,8 @@
 				DEVELOPMENT_TEAM = V5748RS8YH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Audio is recorded to transcribe the meeting. Audio recordings are discarded after transcription.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "You can view a text transcription of your meeting in the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -339,6 +347,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
+		29ADCF812DA68BC9003A3B62 /* XCLocalSwiftPackageReference "../../../Downloads/TranscribingSpeechToText/StartingProject/TutorialResources/TranscriptionKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../../Downloads/TranscribingSpeechToText/StartingProject/TutorialResources/TranscriptionKit;
+		};
 		29DE45082D9AB6DC00298AF9 /* XCLocalSwiftPackageReference "ThemeKit" */ = {
 			isa = XCLocalSwiftPackageReference;
 			relativePath = ThemeKit;
@@ -350,6 +362,10 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		29ADCF822DA68BC9003A3B62 /* TranscriptionKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TranscriptionKit;
+		};
 		29DE45092D9AB6DC00298AF9 /* ThemeKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = ThemeKit;
